@@ -1,0 +1,10 @@
+.photo_profile img{
+width: 40px;
+height: 40px;
+}
+
+@media (min-width: 768px){
+    .sidebar{
+        height: 100;
+    }
+}
