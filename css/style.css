@@ -1,0 +1,22 @@
+:root {
+  /* Define a variável --bs-primary para um tom de vermelho. 
+     Você pode mudar o código hexadecimal (#FF0000) para o vermelho que preferir. */
+  --bs-primary: #dc3545; /* Um vermelho comum do Bootstrap (danger) */
+  --bs-primary-rgb: 220, 53, 69; /* O equivalente RGB para classes como 'text-opacity' */
+}
+
+/* Opcional: Para garantir que todos os componentes usem o novo primário */
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+}
+
+/* Sobrescreve a cor do link 'active' no nav do Bootstrap */
+.sidebar .nav-pills .nav-link.active {
+    /* Define a cor do texto como branco */
+    color: #fff !important; 
+    
+    /* Opcional: Você pode manter o fundo com o tom 'active' do Bootstrap ou forçá-lo. 
+       Aqui, mantemos a cor de fundo primária para contraste visual. */
+    background-color: var(--bs-primary); 
+}

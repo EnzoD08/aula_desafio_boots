@@ -11,21 +11,37 @@
         xintegrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="/css/logo.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="https://anprotec.org.br/site/wp-content/uploads/2018/09/logo-senai-cor-1.jpg"
         type="image/x-icon">
 </head>
 
 <body>
     <!-- Header -->
-    <header id="app-header" class="navbar navbar-dark bg-primary fixed-top shadow-lg px-3">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h4 d-flex align-items-center">
-                <i class="fas fa-school me-2"></i>
-                <strong>Seja bem vindo ao Portal SENAI</strong>
-            </span>
+<header id="app-header" class="navbar navbar-dark bg-primary fixed-top shadow-lg px-3">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h4">
+            <strong>Portal SENAI</strong>
+        </span>
+
+        <div class="d-flex align-items-center">
+            <form class="d-flex me-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
+                <button class="btn btn-outline-light" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+
+            <div class="photo_profile d-flex align-items-center justify-content-center bg-white"
+                 style="width: 135px; height: 40px; overflow: hidden;">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.TOXfIElYZFGzU2IRNIYkKQHaB5?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                     alt="Logo SENAI" 
+                     class="img-fluid"
+                     style="height: 100%; width: auto;">
+            </div>
         </div>
-    </header>
+    </div>
+</header>
 
     <main class="container-fluid">
         <div class="row">
@@ -49,8 +65,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center mb-4 user-profile">
                             <span class="rounded-circle me-3 bg-light d-flex align-items-center justify-content-center"
-                                style="width: 80px; height: 80px; object-fit: cover;"><i
-                                    class="fas fa-ghost fa-2x text-primary"></i></span>
+                                style="width: 80px; height: 80px; object-fit: cover;"></span>
                             <div class="data text-start">
                                 <!-- Título Principal-->
                                 <h2 class="h4 mb-1 fw-semibold"> Seja bem vindo ao Portal SENAI</h2>
@@ -66,9 +81,33 @@
                 <!-- Seção dos Eventos -->
                 <section id="products-section" class="card shadow-lg mb-4">
                     <div class="card-body">
-                        <h3 class="h5 fw-bold mb-4 text-center text-primary"><i class="fas fa-bolt me-2"></i>Fique
+                        <h3 class="h5 fw-bold mb-4 text-center text-primary">Fique
                             informado de nossos eventos</h3>
                     </div>
+
+                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
                 </section>
 
                 <!-- 3. Seção Sobre Nós -->

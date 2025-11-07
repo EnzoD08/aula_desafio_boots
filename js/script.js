@@ -5,7 +5,8 @@ let events = [
         dataISO: "05/12/2025",
         local: "Auditório Senai",
         descricao: "Palestra de concientização sobre Cybersegurança",
-        destaque: "Aberto"
+        destaque: "Aberto",
+        img: "./img/CyberSecurity.png"
     },
 
     { id: "E02",
@@ -14,7 +15,8 @@ let events = [
         dataISO: "20/11/2025",
         local: "Auditório Senai",
         descricao: "Palestra de concientização sobre Segurança no Trabalho",
-        destaque: "Lotado"
+        destaque: "Lotado",
+        img: "./img/SegurancaNoTrabalho.png"
     },
 
     { id: "E03",
@@ -23,8 +25,7 @@ let events = [
         dataISO: "01/12/2025",
         local: "Campus Senai",
         descricao: "Evento Portas Abertas em comemoração aos 30 anos do Senai Zerbini",
-        destaque: "Aberto"
+        destaque: "Aberto",
+        img: "./img/Senai_PortasAbertas.png"
     }
-
-    
-   ];
+];
