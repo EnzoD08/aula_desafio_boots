@@ -1,6 +1,5 @@
 :root {
-  /* Define a variável --bs-primary para um tom de vermelho. 
-     Você pode mudar o código hexadecimal (#FF0000) para o vermelho que preferir. */
+  /* Define a variável --bs-primary para um tom de vermelho. */
   --bs-primary: #dc3545; /* Um vermelho comum do Bootstrap (danger) */
   --bs-primary-rgb: 220, 53, 69; /* O equivalente RGB para classes como 'text-opacity' */
 }
@@ -15,8 +14,19 @@
 .sidebar .nav-pills .nav-link.active {
     /* Define a cor do texto como branco */
     color: #fff !important; 
-    
-    /* Opcional: Você pode manter o fundo com o tom 'active' do Bootstrap ou forçá-lo. 
-       Aqui, mantemos a cor de fundo primária para contraste visual. */
+    /* Define a cor de fundo primária */
     background-color: var(--bs-primary); 
+}
+
+/* Efeito de Hover para os links não ativos na Sidebar (Mantido) */
+.sidebar .nav-pills .nav-link:not(.active):hover {
+    /* Mudar a cor do fundo para um tom mais claro do primário */
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #fff !important; 
+    border-radius: 0.25rem; 
+}
+
+/* Transição suave para o efeito (Mantido) */
+.sidebar .nav-pills .nav-link {
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
 }
